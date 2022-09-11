@@ -2,6 +2,7 @@
     --clr-primary: #C11E22;
     --clr-primary-low: #C14E56;
     --clr-secondary: #233676;
+    --clr-dark : #3d3d3d;
 }
 
 body{
@@ -22,7 +23,7 @@ body{
     background-attachment: fixed;
     height: 100vh;
     max-height: 800px;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .main-nav{
@@ -38,7 +39,7 @@ body{
 }
 
 .main-nav.sticky-nav .text-white{
-    color: black !important;
+    color: var(--clr-dark) !important;
 }
 .main-nav.sticky-nav{
     padding-top: 0.5rem !important;
@@ -48,5 +49,5 @@ body{
 
 .curved-svg{
     position: relative;
-    top: -150px;
+    top: -20vmin;
 }
