@@ -1,0 +1,52 @@
+:root{
+    --clr-primary: #C11E22;
+    --clr-primary-low: #C14E56;
+    --clr-secondary: #233676;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.text-grad {
+    background: -webkit-linear-gradient(var(--clr-primary), var(--clr-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-hero-wrapper{
+    background-image: url('../img/pattern-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    max-height: 800px;
+    min-height: 400px;
+}
+
+.main-nav{
+    transition: all 0.5s ease;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sticky-nav{
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+
+.main-nav.sticky-nav .text-white{
+    color: black !important;
+}
+.main-nav.sticky-nav{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.curved-svg{
+    position: relative;
+    top: -150px;
+}
