@@ -13,4 +13,5 @@ window.addEventListener('scroll', function(e){
 
 navToggleBtn.addEventListener('click', function(e){
     navigation.classList.toggle('active')
+    document.body.classList.toggle('disable-scroll')
 })

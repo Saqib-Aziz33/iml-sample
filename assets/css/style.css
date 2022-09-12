@@ -27,13 +27,15 @@ body{
 }
 
 .main-nav{
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .sticky-nav{
     position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 2;
 }
@@ -50,4 +52,17 @@ body{
 .curved-svg{
     position: relative;
     top: -20vmin;
+}
+
+.social-links{
+    background-color: black;
+}
+
+.social-links i{
+    color: red;
+}
+
+
+body.disable-scroll{
+    overflow: hidden;
 }
