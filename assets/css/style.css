@@ -1,14 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 :root{
     --clr-primary: #C11E22;
     --clr-primary-low: #C14E56;
     --clr-secondary: #233676;
     --clr-dark : #3d3d3d;
+
+    --ff-primary: 'Lato', sans-serif;
+}
+*{
+  font-family: var(--ff-primary);
 }
 
 body{
     position: relative;
     width: 100vw;
     overflow-x: hidden;
+}
+.btn{
+  border-radius: 20px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,var(--clr-primary), var(--clr-secondary));
+    border-radius: 50px;
 }
 
 .text-grad {
@@ -86,8 +105,8 @@ body.disable-scroll{
 
 /* services */
 .service{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: 10px solid rgba(0, 0, 0, 0.1);
     border-image: auto;
@@ -123,8 +142,45 @@ body.disable-scroll{
   }
 
 
+  /* employment */
+  .emp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    height: 200px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  }
+  .emp-rec{
+    background: linear-gradient(to left, #2336764f, #c11e214f), url('../img/recurit.jpg');
+  }
+  .emp-pro{
+    background: linear-gradient(to left, #2336764f, #c11e214f), url('../img/process.jpg');
+  }
+  .emp-man{
+    background: linear-gradient(to left, #2336764f, #c11e214f), url('../img/manage.jpg');
+  }
+  .emp-pow{
+    background: linear-gradient(to left, #2336764f, #c11e214f), url('../img/power.jpg');
+  }
+
+  .job-form{
+    border: none;
+    border-bottom: 1px solid #3d3d3d;
+    border-radius: 0;
+  }
+  .job-form:focus{
+    box-shadow: none;
+  }
+
+
 /* utilities */
 .my-8{
     margin-top: 8rem;
     margin-bottom: 8rem;
+}
+.mb-8{
+  margin-bottom: 8rem;
 }
